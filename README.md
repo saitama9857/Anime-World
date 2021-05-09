@@ -1,19 +1,24 @@
 # Anime-World
 
 * [General info](#general-info)
+* [Heroku Link](#heroku-link)
 * [API Description](#API-Description)
-* [What is used](#What-is-used)
+* [Techology](#Techology)
 * [Notes](#notes)
 * [Contact](#contact)
-* [Heroku Link](#heroku-link)
 
 <img width="1440" alt="Screen Shot 2021-05-09 at 6 35 04 PM" src="https://user-images.githubusercontent.com/58214386/117572751-17a40280-b0f6-11eb-9820-dfec5999922d.png">
+
 https://user-images.githubusercontent.com/58214386/117572753-196dc600-b0f6-11eb-85ac-c1edf22de798.mov
 
 https://user-images.githubusercontent.com/58214386/117572754-1b378980-b0f6-11eb-911c-ab998666d0a7.mov
 ## General Info
 
-* This is Web Application, where you can add some products, and buy somthing.
+* This is Web Application, where you can see Anime.
+
+## Heroku Link
+
+* https://animeworldd.herokuapp.com/
 
 ## API Description
 
@@ -27,7 +32,7 @@ https://user-images.githubusercontent.com/58214386/117572754-1b378980-b0f6-11eb-
 * To delete anime you should access "/anime/{id}/delete"
 * To see detail of anime you should access "/anime/{id}"
 
-## What is used
+## Techology
 * MVC
 * PostgreSQL
 * Bootstrap
@@ -35,15 +40,10 @@ https://user-images.githubusercontent.com/58214386/117572754-1b378980-b0f6-11eb-
 * Rest API
 * Swagger
 
-## Heroku Link
-
-* https://greenshopala.herokuapp.com/
-
 ## Notes
 
 * For Final examination
-* User frieindly interface:)
 
 ## Contact
 
-* https://github.com/1Ostep1
+* https://github.com/saitama9857
