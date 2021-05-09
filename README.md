@@ -1,3 +1,6 @@
+project produced: Aibek.Koshmatov, Dastan.Kamalov.
+
+
 # Anime-World
 
 * [General info](#general-info)
