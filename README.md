@@ -12,6 +12,7 @@
 https://user-images.githubusercontent.com/58214386/117572753-196dc600-b0f6-11eb-85ac-c1edf22de798.mov
 
 https://user-images.githubusercontent.com/58214386/117572754-1b378980-b0f6-11eb-911c-ab998666d0a7.mov
+
 ## General Info
 
 * This is Web Application, where you can see Anime.
