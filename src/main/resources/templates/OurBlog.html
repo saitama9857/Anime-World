@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anime</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 navbar-dark bg-dark border-bottom shadow-sm">
+    <a class="p-2 text-dark" href="/"><img src="https://animeworldzsite.files.wordpress.com/2015/12/cropped-animeworld-01.png" width="300" height="60" alt="TokyoGhoul"></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <nav class="my-2 my-md-0 me-md-3">
+                    <a class="p-2 text-light" href="/">Home Page</a>
+                    <a class="p-2 text-light" href="/Categories">Categories</a>
+                    <a class="p-2 text-light" href="/About">Our Blog</a>
+                    <a class="p-2 text-light" href="/Contact">Contact</a>
+                </nav>
+            </div>
+            <div class="col-2">
+                <a  class="p-2 text-light" href="/anime-add">Developer Part</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="jumbotron bg-dark">
+    <div class="container">
+        <h1 class="display-3 bg-dark text-light">Our Blog</h1>
+        <p class="bg-dark text-light">Welcome to the official Anime blog.</p>
+    </div>
+</div>
+<br><br>
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-4" th:each="el:${animeAll}">
+            <div class="card mb-3 bg-dark">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img th:src="${el.image}" style="width: 135px;height: 165px" alt="animeImage">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title bg-dark text-light" th:text="${el.name}"></h5>
+                            <p class="card-text bg-dark text-light" th:text="${el.info}"></p>
+                            <p class="card-text"><small class="text-muted">Last updated ... ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

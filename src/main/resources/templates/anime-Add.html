@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Anime</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 navbar-dark bg-dark border-bottom shadow-sm">
+    <a class="p-2 text-dark" href="/"><img src="https://animeworldzsite.files.wordpress.com/2015/12/cropped-animeworld-01.png" width="300" height="60" alt="TokyoGhoul"></a>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <nav class="my-2 my-md-0 me-md-3">
+                    <a class="p-2 text-light" href="/">Home Page</a>
+                    <a class="p-2 text-light" href="/Categories">Categories</a>
+                    <a class="p-2 text-light" href="/About">Our Blog</a>
+                    <a class="p-2 text-light" href="/Contact">Contact</a>
+                </nav>
+            </div>
+            <div class="col-2">
+                <a  class="p-2 text-light" href="/anime-add">Developer Part</a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container mt-5 mb-5">
+    <h1 class="text-light">Add Anime</h1>
+    <form action="/anime-add" method="post">
+        <input type="text" name="name" placeholder="Title of Anime" class="form-control bg-dark text-light"><br>
+        <input type="text" name="image" placeholder="Add Url for image" class="form-control bg-dark text-light"><br>
+        <input type="text" name="info" placeholder="Add More Info" class="form-control bg-dark text-light"><br>
+        <select type="text" name="types" class="form-control bg-dark text-light">
+            <option><p>trending</p></option>
+            <option><p>popular</p></option>
+            <option><p>recently</p></option>
+        </select><br>
+        <button type="submit" class="btn btn-success">Add Anime</button>
+    </form>
+</div>
+
+</body>
+</html>
